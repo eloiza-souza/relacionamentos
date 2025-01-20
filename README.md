@@ -108,3 +108,19 @@ class CasoDeUsoExtendido {
     + executar()
 }
 ```
+
+## Inclusão
+
+Representa um caso de uso que **requer** outro.
+
+```mermaid
+classDiagram
+CasoDeUsoPrincipal --> CasoDeUsoAuxiliar : inclui
+class CasoDeUsoPrincipal {
+    - CasoDeUsoAuxiliar auxiliar
+    + executar()
+}
+class CasoDeUsoAuxiliar {
+    + executar()
+}
+```
