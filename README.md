@@ -54,3 +54,16 @@ class Cachorro {
     - String raca
 }
 ```
+
+## Dependência
+Representa uma relação **USA**.
+```mermaid
+classDiagram
+Carro ..> Motor : usa
+class Carro {
+    + dirigir(Motor motor)
+}
+class Motor {
+    + ligar()
+}
+```
