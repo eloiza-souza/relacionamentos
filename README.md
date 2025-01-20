@@ -41,3 +41,16 @@ class Quarto {
     - String tipo
 }
 ```
+
+## Herança
+Representa uma relação **É-UM**.
+```mermaid
+classDiagram
+Animal <|-- Cachorro : é um
+class Animal {
+    - String nome
+}
+class Cachorro {
+    - String raca
+}
+```
