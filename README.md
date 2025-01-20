@@ -67,3 +67,16 @@ class Motor {
     + ligar()
 }
 ```
+
+## Realização
+Representa a implementação de um contrato (**interface**).
+```mermaid
+classDiagram
+Animal <|.. Cachorro : realiza
+class Animal {
+    + emitirSom()
+}
+class Cachorro {
+    + emitirSom()
+}
+```
