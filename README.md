@@ -80,3 +80,17 @@ class Cachorro {
     + emitirSom()
 }
 ```
+
+## Associação Direcionada
+
+Representa uma associação navegável em **apenas uma direção**.
+```mermaid
+classDiagram
+Pedido --> Cliente : direcionada
+class Pedido {
+    - Cliente cliente
+}
+class Cliente {
+    - String nome
+}
+```
