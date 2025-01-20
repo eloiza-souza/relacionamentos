@@ -94,3 +94,17 @@ class Cliente {
     - String nome
 }
 ```
+
+## Extensão
+Representa um caso de uso que pode **estender** outro.
+
+```mermaid
+classDiagram
+CasoDeUsoBase <|-- CasoDeUsoExtendido : estende
+class CasoDeUsoBase {
+    + executar()
+}
+class CasoDeUsoExtendido {
+    + executar()
+}
+```
